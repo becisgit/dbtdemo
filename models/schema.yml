@@ -1,0 +1,25 @@
+
+version: 2
+
+models:
+    - name: product_
+      description: "product"
+      columns:
+          - name: sku
+            tests:
+                - not_null
+                - unique
+    - name: lazada_
+      description: "lazada"
+      columns:
+          - name: order_id
+            description: "orderid"
+            tests:
+                - not_null
+          - name: quantity
+            tests:
+                - not_null
+          - name: order_date
+            tests:
+                - not_null
+
