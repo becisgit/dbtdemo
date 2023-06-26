@@ -75,4 +75,6 @@ After a thorough examination of the data, it is evident that the "lazada" file c
 All SQL query stored in the `Model` folder 
 
 ### e.	Propose a data transformation processes to cleanse and enrich the data according to the defined data model
-The purpose here is to make a star schema to get a high efficiency data model for analysis. the enrich our dataset, we can collect more information from our `Dimension Table` such as product, customers, and brands. This expanded dataset allows for more comprehensive mapping and enables informed decision-making processes.
+- The purpose here is to transform datasets into a star schema to get a high efficiency data model for analysis.
+- To enrich our dataset, we can collect more information from our `Dimension Table` such as product, customers, and brands. This expanded dataset allows for more comprehensive mapping and enables informed decision-making processes.
+- To speed up this data pipeline, we need to understand what's the data source format, if it's a JSON with clear schema, then we can land it into dataset directly. 
