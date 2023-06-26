@@ -1,11 +1,11 @@
 Welcome to your new dbt project!
 
 ### Using the starter project
-- Data Modelling and Transformation: 
-	Calculate total revenue and average order value.
-    Identify the top-selling products and categories.
-    Determine the customer retention rate. 
-    Calculate the average completion time of an order.
+- Data Modelling and Transformation:
+- ##### Calculate total revenue and average order value.
+- ##### Identify the top-selling products and categories.
+- ##### Determine the customer retention rate. 
+- ##### Calculate the average completion time of an order.
 
 
 
