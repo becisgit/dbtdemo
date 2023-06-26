@@ -9,7 +9,7 @@ discount,
 cast(tax as real) tax,
 
  cast('L'||order_id as varchar(256)) as order_id
- from dev.public.lazada)
+ from {{ref('lazada_data')}})
 
  select  'lazada' as source,order_id,brand_shop,cast(customer_id as varchar) customer_id,product_id,
  avg(qty) as qty, avg(discount) as discount, avg(tax) as tax, avg(original_price) as original_price
