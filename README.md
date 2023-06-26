@@ -15,6 +15,7 @@ DBT is the major tool to do data model, and AWS redshift serverless as a data wa
 
 - ##### Identify the top-selling products and categories.
   the top-selling product is Beauty Sleep Miracle Mask and catorgory is Pet Food.
+  
 | **product**                     | **revenue ** |
 |---------------------------------|--------------|
 | Beauty Sleep Miracle Mask       | 2469.929985  |
@@ -23,6 +24,7 @@ DBT is the major tool to do data model, and AWS redshift serverless as a data wa
 | Meow Mix Meister Meal           | 1003.360004  |
 | Tempting Tuna Treats            | 955.9699936  |
 | Chewy Cheesy Delights           | 743.9800014  |
+
 
 | **product category** | **revenue ** |
 |----------------------|--------------|
