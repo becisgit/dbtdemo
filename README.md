@@ -2,7 +2,7 @@ Welcome to your new dbt project!
 
 ### Answers
 - ##### Calculate total revenue and average order value.
-- | **brand**                         | **revenue_total** | **average_revenue** | **completed_qty** | **average_qty** | **average_complete_time ** | **** | **** | **** | **** |
+| **brand**                         | **revenue_total** | **average_revenue** | **completed_qty** | **average_qty** | **average_complete_time ** | **** | **** | **** | **** |
 |-----------------------------------|-------------------|---------------------|-------------------|-----------------|----------------------------|------|------|------|------|
 | Munchie Mania                     | 195.9800072       | 65.32666906         | 6                 | 2               | 1 day, 16:51:23.333333     |      |      |      |      |
 | BeautyBliss                       | 164.4199963       | 82.20999813         | 6                 | 3               | 5 days, 7:12:38            |      |      |      |      |
