@@ -1,6 +1,6 @@
 select order_items.order_id, 
 brand,
-sum(original_price) as revenue_total,
+sum(original_price * (1-discount)) as revenue_total,
 count(distinct order_items.order_id) as completed_orders, 
 --sum(original_price)/count(distinct order_items.order_id) as average_revenue_per_brand, 
 sum(qty) completed_qty
