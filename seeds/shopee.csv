@@ -1,0 +1,105 @@
+﻿order_id,customer,sku,quantity,shop,original_price,discount
+S001,105,1000,1,Pawsitively Pawesome Pet Supplies,25,0
+S001,105,8987,2,BeautyBliss,55.55,5
+S001,105,8987,1,BeautyBliss,19.99,1
+S004,105,8987,3,BeautyBliss,88.88,1
+S005,104,1005,1,Munchie Mania,30,0
+S005,104,1000,2,Pawsitively Pawesome Pet Supplies,49.99,3
+S007,105,5432,1,Glam-O-Rama,45,0
+S009,105,1000,3,Pawsitively Pawesome Pet Supplies,75,3
+S009,105,5432,1,Glam-O-Rama,45,0
+S010,108,5432,2,Glam-O-Rama,79.99,2
+S011,105,5432,1,Glam-O-Rama,45,0
+S011,105,1012,3,Crave-a-Licious,92.45,15
+S011,105,1013,1,Pawsitively Pawesome Pet Supplies,43.66,5
+S014,101,1031,2,Snickerdoodle Snacks 'n' Wagtails,49.99,1
+S015,105,5432,1,Glam-O-Rama,45,0
+S016,103,5432,3,Glam-O-Rama,140,2
+S017,105,5432,1,Glam-O-Rama,45,0
+S018,108,1000,2,Pawsitively Pawesome Pet Supplies,49.99,10
+S019,104,1000,1,Pawsitively Pawesome Pet Supplies,25,2
+S020,109,5432,3,Glam-O-Rama,140,2
+S021,104,1000,1,Pawsitively Pawesome Pet Supplies,25,2
+S021,104,1000,2,Pawsitively Pawesome Pet Supplies,49.99,3
+S023,104,1000,1,Pawsitively Pawesome Pet Supplies,25,2
+S024,103,5432,3,Glam-O-Rama,140,2
+S024,103,1000,1,Pawsitively Pawesome Pet Supplies,25,2
+S024,103,1000,2,Pawsitively Pawesome Pet Supplies,49.99,3
+S024,103,1000,1,Pawsitively Pawesome Pet Supplies,25,2
+S028,108,1000,3,Pawsitively Pawesome Pet Supplies,75,4
+S029,104,1000,1,Pawsitively Pawesome Pet Supplies,25,2
+S030,109,1000,2,Pawsitively Pawesome Pet Supplies,49.99,4
+S031,104,5432,1,Glam-O-Rama,45,0
+S032,110,1012,3,Snickerdoodle Snacks 'n' Wagtails,92.45,15
+S033,104,1013,1,Pawsitively Pawesome Pet Supplies,43.66,5
+S034,101,1012,2,Snickerdoodle Snacks 'n' Wagtails,100,10
+S035,105,1013,1,Pawsitively Pawesome Pet Supplies,43.66,5
+S036,103,1012,3,Snickerdoodle Snacks 'n' Wagtails,92.45,15
+S037,105,1013,1,Pawsitively Pawesome Pet Supplies,43.66,5
+S038,108,1000,2,Pawsitively Pawesome Pet Supplies,49.99,4
+S039,105,1000,1,Pawsitively Pawesome Pet Supplies,25,2
+S040,109,1000,3,Pawsitively Pawesome Pet Supplies,75,15
+S041,105,1013,1,Pawsitively Pawesome Pet Supplies,43.66,5
+S042,110,1012,2,Snickerdoodle Snacks 'n' Wagtails,100,10
+S042,110,1013,1,Pawsitively Pawesome Pet Supplies,43.66,5
+S044,101,1039,3,Pawsitively Pawesome Pet Supplies,113.37,2
+S044,101,1040,1,Snickerdoodle Snacks 'n' Wagtails,13.99,1
+S044,101,1000,2,Pawsitively Pawesome Pet Supplies,49.99,4
+S044,101,1031,1,Snickerdoodle Snacks 'n' Wagtails,16.99,0
+S044,101,5432,3,Glam-O-Rama,140,2
+S049,105,5432,1,Glam-O-Rama,45,0
+S050,109,5432,2,Glam-O-Rama,79.99,2
+S051,105,1000,1,Pawsitively Pawesome Pet Supplies,25,2
+S051,105,1000,3,Pawsitively Pawesome Pet Supplies,75,15
+S053,105,1012,1,Snickerdoodle Snacks 'n' Wagtails,50,5
+S054,101,1013,2,Pawsitively Pawesome Pet Supplies,92.33,10
+S054,101,1005,1,Munchie Mania,30,0
+S056,103,1040,3,Snickerdoodle Snacks 'n' Wagtails,36.99,10
+S057,105,5432,1,Glam-O-Rama,45,0
+S057,105,5432,2,Glam-O-Rama,79.99,2
+S058,108,5432,1,Glam-O-Rama,45,0
+S060,109,1000,3,Pawsitively Pawesome Pet Supplies,75,15
+S060,109,1040,1,Snickerdoodle Snacks 'n' Wagtails,13.99,1
+S062,110,1000,2,Pawsitively Pawesome Pet Supplies,49.99,4
+S063,105,1031,1,Snickerdoodle Snacks 'n' Wagtails,16.99,0
+S064,101,5432,3,Glam-O-Rama,140,2
+S064,101,1000,1,Pawsitively Pawesome Pet Supplies,25,2
+S066,103,5432,2,Glam-O-Rama,79.99,2
+S067,105,1000,1,Pawsitively Pawesome Pet Supplies,25,2
+S068,108,1013,3,Pawsitively Pawesome Pet Supplies,121.03,15
+S069,105,1012,1,Snickerdoodle Snacks 'n' Wagtails,50,5
+S069,105,1013,2,Pawsitively Pawesome Pet Supplies,92.33,10
+S071,105,1039,1,Pawsitively Pawesome Pet Supplies,39.99,1
+S071,105,1040,3,Snickerdoodle Snacks 'n' Wagtails,36.99,10
+S073,105,1000,1,Pawsitively Pawesome Pet Supplies,25,2
+S074,101,1031,2,Snickerdoodle Snacks 'n' Wagtails,49.99,1
+S074,101,5432,1,Glam-O-Rama,45,0
+S074,101,5432,3,Glam-O-Rama,140,2
+S078,108,5432,1,Glam-O-Rama,45,0
+S078,108,5432,2,Glam-O-Rama,79.99,2
+S079,105,1000,1,Pawsitively Pawesome Pet Supplies,25,2
+S080,109,5432,3,Glam-O-Rama,140,2
+S080,109,1000,1,Pawsitively Pawesome Pet Supplies,25,2
+S082,110,5432,2,Glam-O-Rama,79.99,2
+S083,105,5432,1,Glam-O-Rama,45,0
+S085,101,4141,3,Crave-a-Licious,75.75,5
+S085,101,5643,1,Pawsitively Pawesome Pet Supplies,18,0
+S087,103,4141,1,Crave-a-Licious,23.99,0
+S090,105,4141,2,Crave-a-Licious,45,1
+S088,108,5643,3,Pawsitively Pawesome Pet Supplies,49.99,1
+S088,108,4141,2,Crave-a-Licious,45,0
+S086,109,5245,2,Snickerdoodle Snacks 'n' Wagtails,69.99,1
+S091,105,5643,1,Pawsitively Pawesome Pet Supplies,18,10
+S089,110,5245,1,Snickerdoodle Snacks 'n' Wagtails,36,0
+S093,109,1000,1,Pawsitively Pawesome Pet Supplies,25,2
+S094,105,5432,2,Glam-O-Rama,79.99,2
+S095,110,1000,1,Pawsitively Pawesome Pet Supplies,25,2
+S096,105,5432,3,Glam-O-Rama,140,2
+S097,101,5432,1,Glam-O-Rama,45,0
+S097,101,5245,3,Snickerdoodle Snacks 'n' Wagtails,99.99,2
+S099,103,5643,1,Pawsitively Pawesome Pet Supplies,18,1
+S099,103,5245,3,Snickerdoodle Snacks 'n' Wagtails,99.99,2
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
