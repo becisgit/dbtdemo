@@ -85,4 +85,6 @@ All SQL query stored in the `Model` folder
 - The purpose here is to transform datasets into a star schema to get a high efficiency data model for analysis.
 - To enrich our dataset, we can collect more information from our `Dimension Table` such as product, customers, and brands. This expanded dataset allows for more comprehensive mapping and enables informed decision-making processes.
 - To speed up this data pipeline, we need to understand what's the data source format, if it's a JSON with clear schema, then we can land it into dataset directly.
+- Once this dataset is getting bigger and bigger and bigger, incremental model should be enabled in dbt model.
+- For Dashboard, we can clearfy title in each chart.
 
