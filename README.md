@@ -1,4 +1,4 @@
-This technical assignment datasets are relatively straightforward. To ensure cleanliness and efficiency throughout the data transformation, I have made the decision to use the following approach:
+![image](https://github.com/becisgit/dbtdemo/assets/97150243/21aef1e3-a8d1-4ca6-99ad-3463e572d426)This technical assignment datasets are relatively straightforward. To ensure cleanliness and efficiency throughout the data transformation, I have made the decision to use the following approach:
 - DBT(data build tool) is the major tool to do data modeling.
 - AWS Redshift Serverless serves as a data warehouse.
 - Power BI is used for creating dashboards.
@@ -13,37 +13,44 @@ You can access the embedded website by clicking [here](https://app.powerbi.com/v
 
 ### a.	Analyse the provided sample data and identify potential data quality issues or missing information. These data come from external platform, and there is no documentation about it. 
 The dataset seems clean and no `null` value. However, it should be noted that certain order details from shopee may be missing due to the presence of `shopee_status` records associated with specific order_id values that do not exist in the `shopee` dataset. This discrepancy could be attributed to incomplete or delayed data availability. (please refer to models/missing_order_details.sql)
+There's some different status, to calculate reveune, I filtered only completed orders. (no cancelled no in progress)
 
 ### b.	Based on the data analysis, design an appropriate data model to support the following business requirements:
 - ##### Calculate total revenue and average order value.
-| **brand**                         | **revenue_total** | **average_revenue** | **completed_qty** | **average_qty** | 
-|-----------------------------------|-------------------|---------------------|-------------------|-----------------|
-| Munchie Mania                     | 195.9800072       | 65.32666906         | 6                 | 2               | 
-| BeautyBliss                       | 164.4199963       | 82.20999813         | 6                 | 3               |
-| Glam-O-Rama                       | 2469.929985       | 98.7971994          | 56                | 2.24            |
-| Crave-a-Licious                   | 189.7399998       | 47.43499994         | 8                 | 2               |
-| Pawsitively Pawesome Pet Supplies | 2946.270018       | 73.65675044         | 104               | 2.6             |
-| Snickerdoodle Snacks 'n' Wagtails | 2561.789993       | 121.9899997         | 76                | 3.619047619     |
+| brand                             | revenue_total | average_revenue | completed_qty | average_qty |
+|-----------------------------------|---------------|-----------------|---------------|--------------|
+| Pawsitively Pawesome Pet Supplies | 2836.589517   | 70.91473793     | 104           | 2.6          |
+| Snickerdoodle Snacks 'n' Wagtails | 2495.677894   | 118.8418045     | 76            | 3.619047619  |
+| Glam-O-Rama                       | 2436.331385   | 97.45325541     | 56            | 2.24         |
+| Munchie Mania                     | 195.9800072   | 65.32666906     | 6             | 2            |
+| Crave-a-Licious                   | 185.5024998   | 46.37562494     | 8             | 2            |
+| BeautyBliss                       | 160.5537963   | 80.27689816     | 6             | 3            |
 
 
 - ##### Identify the top-selling products and categories.
   the top-selling product is Beauty Sleep Miracle Mask and catorgory is Pet Food.
   
-| **product**                     | **revenue** |
+| product                         | revenue      |
 |---------------------------------|--------------|
-| Beauty Sleep Miracle Mask       | 2469.929985  |
-| Purrfectly Fishy Feast          | 1209.899994  |
-| Whisker Lickin' Chicken Delight | 1094.94001   |
-| Meow Mix Meister Meal           | 1003.360004  |
-| Tempting Tuna Treats            | 955.9699936  |
-| Chewy Cheesy Delights           | 743.9800014  |
+| Beauty Sleep Miracle Mask       | 2436.331385  |
+| Purrfectly Fishy Feast          | 1157.164995  |
+| Whisker Lickin' Chicken Delight | 1037.94221   |
+| Meow Mix Meister Meal           | 1000.692704  |
+| Tempting Tuna Treats            | 951.2704937  |
+| Chewy Cheesy Delights           | 696.4445013  |
+| Squeaky Clean Dental Chews      | 292.9602029  |
+| Carrot Sticks                   | 195.9800072  |
+| Steaks chews                    | 185.5024998  |
+| Unicorn Magic Elixir            | 160.5537963  |
+| Whacky Wildberry Wafers         | 101.5101017  |
+| Crunchy Carrot Cravings         | 94.28220257  |
 
 top-selling catorgory is Pet Food.
 | **product category** | **revenue** |
 |----------------------|--------------|
-| Pet Food             | 5508.060011  |
-| Beauty               | 2634.349981  |
-| Groceries            | 385.7200069  |
+| Pet Food             | 5332.26741096495  |
+| Beauty               | 2596.88518167495 |
+| Groceries            | 381.482506942748  |
 
 - ##### Determine the customer retention rate.
 | **brand**                         | **retention_rate** |
@@ -69,7 +76,7 @@ top-selling catorgory is Pet Food.
 In the project, there are four files: `lazada`, `products`, `shopee`, and `shopee_status`.
 From analyzing the data, it is clear that the "Product" file is a `Dimension Table`. Additionally, there are two files related to Shopee and one file for Lazada.
 After a thorough examination of the data, it is evident that the "lazada" file can be transformed into two tables: "lazada" and "lazada_status," similar to the approach followed for Shopee.
-
+And there's `paid price` in lazada, `original price` in shopee, we need to convert paid price to original price then we can append two files together.
 
 ### d. Create an SQL script to create the necessary tables and relationships based on your data model.
 All SQL query stored in the `Model` folder 
@@ -77,4 +84,5 @@ All SQL query stored in the `Model` folder
 ### e.	Propose a data transformation processes to cleanse and enrich the data according to the defined data model
 - The purpose here is to transform datasets into a star schema to get a high efficiency data model for analysis.
 - To enrich our dataset, we can collect more information from our `Dimension Table` such as product, customers, and brands. This expanded dataset allows for more comprehensive mapping and enables informed decision-making processes.
-- To speed up this data pipeline, we need to understand what's the data source format, if it's a JSON with clear schema, then we can land it into dataset directly. 
+- To speed up this data pipeline, we need to understand what's the data source format, if it's a JSON with clear schema, then we can land it into dataset directly.
+
