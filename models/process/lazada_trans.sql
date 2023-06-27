@@ -23,9 +23,9 @@ lazada.order_id,
 customer_id,
 product_id,
 qty,
-discount,
-tax,
-original_price,
+ {{int_to_percent('discount')}} as discount,
+ {{int_to_percent('tax')}} as tax,
+paid_price / (1- {{int_to_percent('discount')}}) as original_price,
 --orderdate.order_datetime, 
 status.cancel,completed
 from  {{ref('lazada_')}} lazada 

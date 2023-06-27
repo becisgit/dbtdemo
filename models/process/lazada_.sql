@@ -4,7 +4,7 @@ cast(customer_id as varchar) customer_id,
 cast(product_id as varchar) product_id,
 quantity as qty,
 brand as brand_shop,
-paid_price as original_price,
+paid_price as paid_price,
 discount,
 cast(tax as real) tax,
 
@@ -12,6 +12,9 @@ cast(tax as real) tax,
  from {{ref('lazada_data')}})
 
  select  'lazada' as source,order_id,brand_shop,cast(customer_id as varchar) customer_id,product_id,
- avg(qty) as qty, avg(discount) as discount, avg(tax) as tax, avg(original_price) as original_price
+ avg(qty) as qty, 
+ avg(discount) as discount, 
+ avg(tax) as tax, 
+ avg(paid_price) as paid_price
   from tb 
  group by source,order_id,brand_shop,customer_id,product_id

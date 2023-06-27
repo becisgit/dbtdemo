@@ -12,5 +12,7 @@
 {% endmacro %}
 
 
-
+{% macro int_to_percent(column_name) %}
+    (cast({{ column_name }} as float) / 100)
+{% endmacro %}
 
