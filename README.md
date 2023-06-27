@@ -1,4 +1,4 @@
-![image](https://github.com/becisgit/dbtdemo/assets/97150243/21aef1e3-a8d1-4ca6-99ad-3463e572d426)This technical assignment datasets are relatively straightforward. To ensure cleanliness and efficiency throughout the data transformation, I have made the decision to use the following approach:
+This technical assignment datasets are relatively straightforward. To ensure cleanliness and efficiency throughout the data transformation, I have made the decision to use the following approach:
 - DBT(data build tool) is the major tool to do data modeling.
 - AWS Redshift Serverless serves as a data warehouse.
 - Power BI is used for creating dashboards.
