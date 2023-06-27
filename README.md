@@ -5,6 +5,9 @@ This technical assignment datasets are relatively straightforward. To ensure cle
 
 Below is the transfomation process of data model (snapsoht from DBT)
 ![alt text](https://github.com/becisgit/dbtdemo/blob/main/lineage.JPG)
+
+Power BI data model 
+![alt text](https://github.com/becisgit/dbtdemo/blob/main/datamodels_powerBI.JPG)
 and report
 
 ## PowerBI Embedded report
