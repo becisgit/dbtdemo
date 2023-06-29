@@ -1,4 +1,5 @@
 {{ config(materialized='table') }}
+
 select 
 case when status = 'new' then 'paid' 
 when status = 'ready to ship' then 'processing' 

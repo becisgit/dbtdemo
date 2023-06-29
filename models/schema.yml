@@ -9,7 +9,21 @@ models:
             tests:
                 - not_null
                 - unique
-    - name: lazada_
+
+    - name: shopee_
+      description: "shopee"
+      columns:
+          - name: order_id
+            description: "orderid"
+            tests:
+                - not_null
+          - name: quantity
+            tests:
+                - not_null
+          - name: order_date
+            tests:
+                - product_match
+    - name: lazada_data
       description: "lazada"
       columns:
           - name: order_id
@@ -20,6 +34,20 @@ models:
             tests:
                 - not_null
           - name: order_date
+            tests:
+                - not_null
+    - name: shopee_status_
+      description: "shopee status"
+      columns:
+          - name: order_id
+            description: "orderid"
+            tests:
+                - not_null
+    - name: dev.public.shopee
+      description: "shopee status"
+      columns:
+          - name: order_id
+            description: "orderid"
             tests:
                 - not_null
 
